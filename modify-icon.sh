@@ -13,7 +13,7 @@ GRAY_AREA_SIZE="${IMAGE_WIDTH}x${MODIFIED_IMAGE_HEIGTH}"
 
 echo "Modifying: ${ICON_FILE} ${IMAGE_WIDTH} ${IMAGE_HEIGHT} ${GRAY_AREA_SIZE}"
 
-/usr/local/bin/convert \
+convert \
     -background '#0008' \
     -fill white \
     -gravity center \
