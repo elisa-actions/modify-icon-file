@@ -17,7 +17,7 @@ inputs:
 runs:
   using: "composite"
   steps:
-    - run: echo Icon ${{ inputs.icon-file }} First line ${{ inputs.first-line }} Second line ${{ inputs.second-line}} Third line ${{ inputs.third-line }}.
+    - run: brew install imagemagick
       shell: bash
     - run: ${{ github.action_path }}/modify-icon.sh ${{ inputs.icon-file }} ${{ inputs.first-line }} ${{ inputs.second-line}} ${{ inputs.third-line }}
       shell: bash
