@@ -18,6 +18,7 @@ runs:
   using: "composite"
   steps:
     - run: brew install gs
+      shell: bash
     - run: brew install imagemagick
       shell: bash
     - run: ${{ github.action_path }}/modify-icon.sh ${{ inputs.icon-file }} ${{ inputs.first-line }} ${{ inputs.second-line}} ${{ inputs.third-line }}
