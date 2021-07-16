@@ -1,7 +1,9 @@
 # modify-icon-file
 
+With this tool you can include some data onto app icon. Like, is it alpha build, beta build, version number and why not some backend-related info also.
+
 ## Prerequirements
-This workflow is using [ImageMagick](https://imagemagick.org/). 
+This workflow is using [ImageMagick](https://imagemagick.org/) and [Ghostscript](https://www.ghostscript.com/). These tools are installed using [Brew Package Manager](https://brew.sh/) and tool is verified using ```macos-latest```
 
 ## How to use 
 There is one required parameter, an icon file naturally, and few optionals.
